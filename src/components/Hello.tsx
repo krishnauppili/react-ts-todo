@@ -24,7 +24,6 @@ class Hello extends React.Component<Props, State> {
 
     render() {
         const {name} = this.props;
-        console.log(this.state.currentEnthusiasm);
         if (this.state.currentEnthusiasm <= 0) {
             throw new Error('You could be a little more enthusiastic. :D');
         }
