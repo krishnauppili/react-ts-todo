@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./style.css";
+import "./hello.css";
 export interface Props {
     name:string;
     enthusiasmLevel?:number;
