@@ -1,20 +1,22 @@
 import * as React from 'react';
-import './App.css';
+import {Component} from "react";
+import Hello from './containers/Hello';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { enthusiasm } from './reducers/index';
+import { StoreState } from './types/index';
 
-import logo from './logo.svg';
+const store = createStore<StoreState,any,any,any>(enthusiasm, {
+    enthusiasmLevel: 4,
+    languageName: 'TypeScript',
+});
 
-class App extends React.Component {
-  public render() {
+class App extends Component {
+   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+        <Provider store={store}>
+            <Hello />
+        </Provider>
     );
   }
 }
