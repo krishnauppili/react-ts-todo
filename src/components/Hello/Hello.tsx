@@ -11,7 +11,7 @@ class Hello extends React.Component<Props, State> {
 
     constructor(props:Props){
         super(props);
-        this.state = { currentEnthusiasm: props.enthusiasmLevel || 1 };
+        this.state = { currentEnthusiasm: props.enthusiasmLevel!==undefined?props.enthusiasmLevel:1 };
     }
 
     updateEnthusiasm(currentEnthusiasm: number) {
