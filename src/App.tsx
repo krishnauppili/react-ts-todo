@@ -3,11 +3,11 @@ import {Component} from "react";
 import Hello from './containers/Hello';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { enthusiasm } from './reducers/index';
-import { StoreState } from './types/index';
+import { enthusiasm } from './reducers/';
+import { StoreState } from './types/';
 
 const store = createStore<StoreState,any,any,any>(enthusiasm, {
-    enthusiasmLevel: 4,
+    enthusiasmLevel: 1,
     languageName: 'TypeScript',
 });
 
