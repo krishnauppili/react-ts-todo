@@ -1,21 +1,21 @@
 import * as React from 'react';
 import {Component} from "react";
-// import { Provider } from 'react-redux';
 import { createStore,applyMiddleware } from 'redux';
-import { enthusiasm } from './reducers/';
-import { StoreState } from './types/';
+import createSagaMiddleware from 'redux-saga';
+import RootReducer from "./store/Root/reducer";
+import {Provider} from "react-redux";
 
-const store = createStore<StoreState,any,any,any>(enthusiasm, {
-    enthusiasmLevel: 1,
-    languageName: 'TypeScript',
-});
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(RootReducer,applyMiddleware(sagaMiddleware));
 
 class App extends Component {
    render() {
     return (
-        <div>
-            Reached app
-        </div>
+        <Provider store={store}>
+            <div>
+                Reached store
+            </div>
+        </Provider>
     );
   }
 }
