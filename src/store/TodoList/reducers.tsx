@@ -1,4 +1,4 @@
-import {TodoList, TodoListState} from "./types";
+import {TodoListState} from "./types";
 import {CreateReducer} from "../../lib/create_reducer";
 import {GET_ALL_TODO_LIST_SUCCESS} from "./constants";
 
@@ -13,7 +13,7 @@ const initialState:TodoListState = {
 };
 
 const todoListReducer = CreateReducer(initialState, {
-    [GET_ALL_TODO_LIST_SUCCESS](state, action) {
+    [GET_ALL_TODO_LIST_SUCCESS](state:TodoListState, action:any) {
         return {...state, todoLists:action.payload};
     },
 });

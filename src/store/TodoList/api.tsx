@@ -1,6 +1,6 @@
 let faker = require('faker');
 
-export function getAllTodoList():[{}]{
+export function getAllTodoList(){
     let todoLists =[];
     for (let i=0;i<25;i++){
         let tasks = [];
@@ -9,9 +9,9 @@ export function getAllTodoList():[{}]{
             tasks.push(taskItem);
         }
         let todoListItem = {
-            "title":faker.lorem.words(),
-            "description":faker.lorem.sentence(),
-            "tasks":tasks
+            title:faker.lorem.words(),
+            description:faker.lorem.sentence(),
+            tasks:tasks
         };
         todoLists.push(todoListItem);
     }

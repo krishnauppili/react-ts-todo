@@ -15,7 +15,7 @@ export const CREATE_TODO_LIST = "add_todo_list";
 export type CREATE_TODO_LIST = typeof CREATE_TODO_LIST;
 
 export const UPDATE_TODO_LIST = "update_todo_list";
-export type CREATE_TODO_LIST = typeof UPDATE_TODO_LIST;
+export type UPDATE_TODO_LIST = typeof UPDATE_TODO_LIST;
 
 export const DELETE_TODO_LIST = "delete_todo_list";
-export type CREATE_TODO_LIST = typeof DELETE_TODO_LIST;
+export type DELETE_TODO_LIST = typeof DELETE_TODO_LIST;
