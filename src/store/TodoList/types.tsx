@@ -1,15 +1,16 @@
 export interface TodoListState{
-    todoLists:TodoList[];
-    currentList:TodoList;
+    todoLists:ITodoList[];
+    currentList:ITodoList;
     loading:boolean;
 }
 
-export interface TodoList{
+export interface ITodoList{
     title:string;
     description:string;
-    tasks:Task[];
+    tasks:ITask[];
 }
-export interface Task{
-    description:string;
+
+export interface ITask{
+    title:string;
     isComplete:boolean;
 }
