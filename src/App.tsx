@@ -6,7 +6,7 @@ import RootReducer from "./store/Root/reducer";
 import {Provider} from "react-redux";
 import TodoLists from "./Views/TodoList";
 import RootSaga from "./store/Root/sagas";
-
+import "./App.css";
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(RootReducer,applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(RootSaga);
