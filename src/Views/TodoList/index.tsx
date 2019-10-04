@@ -11,7 +11,8 @@ class TodoLists extends Component<any,any>{
     }
 
     render(){
-        const {todoLists} = this.props;
+        const {todoLists,currentList} = this.props;
+        console.log(todoLists,currentList);
         return(
             <div className="todo-lists">
                 <div style={{marginBottom:"1rem"}}>Todo lists</div>
