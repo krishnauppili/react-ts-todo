@@ -5,10 +5,11 @@ export function getAllTodoList(){
     for (let i=0;i<25;i++){
         let tasks = [];
         for(let j=0;j<10;j++){
-            let taskItem = { title:faker.lorem.words() };
+            let taskItem = { id:faker.random.uuid(),title:faker.lorem.words() };
             tasks.push(taskItem);
         }
         let todoListItem = {
+            id:faker.random.uuid(),
             title:faker.lorem.words(),
             description:faker.lorem.sentence(),
             tasks:tasks
