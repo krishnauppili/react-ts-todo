@@ -3,10 +3,12 @@
   width: 49%;
   display: inline-block;
   vertical-align: middle; }
-  .todo-lists .todo-list-item {
-    background-color: #FFFFFF;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16); }
-    .todo-lists .todo-list-item:not(:last-child) {
-      margin-bottom: 1rem; }
+
+.todo-lists .todo-list-item {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16); }
+
+.todo-lists .todo-list-item:not(:last-child) {
+  margin-bottom: 1rem; }
