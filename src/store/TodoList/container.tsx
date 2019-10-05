@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {bindActionCreators, Dispatch} from 'redux';
-import {getAllTodoList} from "./actions";
+import {getAllTodoList,getCurrentTodoList,updateTask} from "./actions";
 import {ApplicationState} from "../Root/reducer";
 
 export default function TodoListContainer(component:any) {
@@ -8,7 +8,7 @@ export default function TodoListContainer(component:any) {
 }
 
 function mapDispatchToProps(dispatch:Dispatch) {
-    return bindActionCreators({getAllTodoList}, dispatch);
+    return bindActionCreators({getAllTodoList,getCurrentTodoList,updateTask}, dispatch);
 }
 
 function mapStateToProps(state:ApplicationState) {

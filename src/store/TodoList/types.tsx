@@ -1,6 +1,6 @@
 export interface TodoListState{
-    todoLists:ITodoList[];
-    currentList:ITodoList | {};
+    todoLists:ITodoList[] | any[];
+    currentList: ITodoList | {};
     loading:boolean;
 }
 

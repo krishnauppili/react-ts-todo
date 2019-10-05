@@ -2,3 +2,14 @@ body {
   position: relative;
   background-color: #f7f7f7;
   font-family: 'Lato', sans-serif; }
+  body #root {
+    margin: 4rem 3rem; }
+
+.mt-1 {
+  margin-top: 1em; }
+
+.mt-2 {
+  margin-top: 2em; }
+
+.ml-1 {
+  margin-left: 1em; }

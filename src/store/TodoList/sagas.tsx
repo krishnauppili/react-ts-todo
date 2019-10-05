@@ -24,8 +24,6 @@ function* handleFetchRequest(action:GetAllTodoListAction){
 function* handleGetRequest(action:GetCurrentTodoListAction){
     try{
         const {todoListId,todoLists} = action.payload;
-        console.log("Todo list",todoListId);
-        debugger;
         const currentTodoList = _.find(todoLists, _.matchesProperty('id', todoListId));
         yield put({type: GET_CURRENT_TODO_LIST_SUCCESS,payload:currentTodoList});
     }

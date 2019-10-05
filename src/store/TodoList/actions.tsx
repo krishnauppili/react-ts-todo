@@ -1,5 +1,5 @@
 import {Action, ActionCreator} from "redux";
-import { GET_ALL_TODO_LISTS, GET_CURRENT_TODO_LIST} from "./constants";
+import {GET_ALL_TODO_LISTS, GET_CURRENT_TODO_LIST, UPDATE_TASK} from "./constants";
 import TodoList from "./models/todo_model";
 
 
@@ -18,6 +18,14 @@ export interface GetCurrentTodoListAction extends Action<GET_CURRENT_TODO_LIST>{
     }
 }
 
+export interface UpdateTaskAction extends Action<UPDATE_TASK>{
+    type:UPDATE_TASK,
+    payload:{
+        taskId:number,
+        isChecked:boolean,
+    }
+}
+
 
 export const getAllTodoList: ActionCreator<GetAllTodoListAction> = () => ({
     type: GET_ALL_TODO_LISTS,
@@ -29,6 +37,14 @@ export const getCurrentTodoList:ActionCreator<GetCurrentTodoListAction> = (todoL
     payload:{
         todoLists:todoLists,
         todoListId:currentListId,
+    }
+});
+
+export const updateTask:ActionCreator<UpdateTaskAction> = (taskId:number,isChecked:boolean) => ({
+    type: UPDATE_TASK,
+    payload:{
+        taskId,
+        isChecked,
     }
 });
 

@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import TodoLists from "./Views/TodoList";
 import RootSaga from "./store/Root/sagas";
 import "./App.css";
+import TodoListDetail from "./Views/TodoList/todo_list_detail";
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(RootReducer,applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(RootSaga);
@@ -16,6 +17,7 @@ class App extends Component {
     return (
         <Provider store={store}>
             <TodoLists/>
+            <TodoListDetail/>
         </Provider>
     );
   }
