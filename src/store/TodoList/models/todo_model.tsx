@@ -9,7 +9,7 @@ import {
 import _ from "lodash";
 import {ITask, ITodoList} from "../types";
 
-class Task implements ITask{
+export class Task implements ITask{
     @serializable(identifier())
     id = Math.random();
     @serializable title = "";
