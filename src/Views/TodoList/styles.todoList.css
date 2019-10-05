@@ -1,16 +1,19 @@
 .todo-lists {
-  width: 49%;
+  width: 45%;
   display: inline-block;
   vertical-align: top;
   height: 80vh;
-  overflow-y: scroll; }
-  .todo-lists .todo-list-item {
-    background-color: #FFFFFF;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16); }
-    .todo-lists .todo-list-item:not(:last-child) {
-      margin-bottom: 1rem; }
+  overflow: scroll;
+  padding: 2%; }
+
+.todo-lists .todo-list-item {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16); }
+
+.todo-lists .todo-list-item:not(:last-child) {
+  margin-bottom: 1rem; }
 
 .todo-list-detail {
   background-color: #FFFFFF;
@@ -22,5 +25,6 @@
   display: inline-block;
   vertical-align: top;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16); }
-  .todo-list-detail .task-item .completed {
-    text-decoration: line-through; }
+
+.todo-list-detail .task-item .completed {
+  text-decoration: line-through; }

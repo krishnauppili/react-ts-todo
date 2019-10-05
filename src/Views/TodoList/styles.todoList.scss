@@ -1,9 +1,10 @@
 .todo-lists{
-  width: 49%;
+  width: 45%;
   display: inline-block;
   vertical-align: top;
   height: 80vh;
-  overflow-y: scroll;
+  overflow: scroll;
+  padding: 2%;
   .todo-list-item{
     background-color: #FFFFFF;
     padding: 2rem;
