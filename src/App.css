@@ -2,8 +2,9 @@ body {
   position: relative;
   background-color: #f7f7f7;
   font-family: 'Lato', sans-serif; }
-  body #root {
-    margin: 4rem 3rem; }
+
+body #root {
+  margin: 4rem 3rem; }
 
 .mt-1 {
   margin-top: 1em; }
