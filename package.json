@@ -13,7 +13,7 @@
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.12.14",
     "react-redux": "^7.1.1",
-    "react-scripts-ts": "3.1.0",
+    "react-scripts-ts": "4.0.8",
     "redux": "^4.0.4",
     "redux-saga": "^1.1.1",
     "serializr": "^1.5.2"
